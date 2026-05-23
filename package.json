@@ -8,7 +8,7 @@
     "preinstall": "npx only-allow pnpm",
     "lint": "eslint",
     "lint:build": "eslint . --quiet",
-    "start": "next start --port $PORT",
+    "start": "next start",
     "ts-check": "tsc -p tsconfig.json",
     "validate": "pnpm run --parallel '/^(ts-check|lint:build)$/'",
     "db:init": "tsx src/lib/database.ts"
